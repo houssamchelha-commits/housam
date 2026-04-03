@@ -40,8 +40,20 @@ nav a{
 
 /* HERO */
 .hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     text-align:center;
     padding:80px 20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:4px solid #38bdf8;
 }
 
 .hero h1{
@@ -118,6 +130,10 @@ footer{
 
 <!-- HERO -->
 <div class="hero">
+
+    <!-- IMAGE -->
+    <img src="/dev.png" alt="Photo développeur">
+
     <h1>Bonjour, je suis <span>Houssam</span></h1>
     <p>Stagiaire en 1ère année Développement Full Stack</p>
     <button class="btn" onclick="scrollToProjects()">Voir mes projets</button>
@@ -140,9 +156,9 @@ footer{
     <div class="projects">
 
         <div class="card">
-            <h3>Calculatrice PHP</h3>
-            <p>Application simple pour effectuer des calculs.</p>
-            <button class="btn">Voir</button>
+            <h3>Atelier 1</h3>
+            <p>Table de multiplication.</p>
+             <a href="ex1.php"><button class="btn">Voir</button></a>
         </div>
 
         <div class="card">
